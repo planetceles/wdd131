@@ -1,14 +1,65 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
-    <meta name="author" description="Celestin M. Mande ">
-    <meta name="">
-    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <title>WDD 131 - Dynamic Web Fundamentals - Celestin Mande</title>
+    <meta name="author" content="Celestin M. Mande">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Celestin Mande Mande - Course Homepage">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Celestin The Developer</h1>
+    <header>
+        <div class="course">
+            <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/celestin-mande-mande1/">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/2?lang=eng&id=p23-p25#p23">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Celestin M. Mande</h1>
+        <section class="card one">
+                <div class="about"><p>About Me</p></div>
+                <div class="presentation">
+                    <img src="images/thecelestin.jpg" alt="Celestin M. Mande">
+                    <p>Hello everyone, I am Celestin, an online student at Byu-Idaho. I am pusiong an online degree in Software Development, and I am excited with the learnings and discoveries. I love what I am doing, and will achieve the desired outcome. Learning how to code is like learning a new language and it's so exciting. I am member of the Church of Jesus-Christ of Latter Day Saints, and I've served a full time mission.</p>
+                </div>
+            <div class="city">
+                <h2>Johannesburg, South Africa</h2>
+                <figure><img src="images/saf.jpeg" alt="South Africa Flag"><figcaption>South Africa Flag</figcaption></figure>
+                <p>I am currently living in Johannesburg, South Africa. Johannesburg is a beautiful city with lots of opportunities. My Software Development skills will be of greater need to support businesses and individuals. I wii be happy to serve </p>
+            </div>
+        </section>
+        <section class="card two">
+            <div class="about">
+                <p>Web Dev Resources</p>
+            </div>
+            
+            <div class="resources">
+                <ul>
+                    <li><a href="https://css-tricks.com/">Css Tricks</a></li>
+                    <li><a href="https://squoosh.app/">Image Editor</a></li>
+                    <li><a href="https://www.w3schools.com/">W3School</a></li>
+                    <li><a href="https://web.dev/">Web Dev By Google</a></li>
+                    <li><a href="https://codepen.io/pen">Code Pen</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Celestin Mande | South Africa</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
