@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album - WDD 131 - Dynamic Web Fundamentals</title>
+    <meta name="author" content="Celestin M. Mande">
+    <meta name="description" content="Beautiful images of temples of the Church of Jesus-Christ of Latter-Day Saints. This activity will make the content to respond correctly on larger and smaller views">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p>Temple Album</p>
+        <button id="menu" aria-label="Toggle navigation" aria-expanded="false"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Home" class="active">Home</a></li>
+                <li><a href="#" title="Old">Old</a></li>
+                <li><a href="#" title="New">New</a></li>
+                <li><a href="#" title="Large">Large</a></li>
+                <li><a href="#" title="Small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section class="album">
+            <figure><img src="images/adelaide-australia-temple.jpg" alt="Adelaide Australia Temple"><figcaption>Adelaide Australia Temple</figcaption></figure>
+            <figure><img src="images/albuquerque-temple.jpg" alt="Albuquerque New Mexico Temple"><figcaption>Albuquerque New Mexico Temple</figcaption></figure>
+            <figure><img src="images/nigeriaTemple.jpg" alt="Aba Nigeria Temple"><figcaption>Aba Nigeria Temple</figcaption></figure>
+            <figure><img src="images/anchorage-alaska-temple.jpg" alt="Anchorage Alaska Temple"><figcaption>Anchorage Alaska Temple</figcaption></figure>
+            <figure><img src="images/apia-samoa-temple.jpg" alt="Apia Samoa Temple"><figcaption>Apia Samoa Temple</figcaption></figure>
+            <figure><img src="images/arequipa-peru-temple.jpeg" alt="Arequipa Peru Temple"><figcaption>Arequipa Peru Temple</figcaption></figure>
+            <figure><img src="images/bern-switzerland-temple.jpg" alt="Bern Switzerland Temple"><figcaption>Bern Switzerland Temple</figcaption></figure>
+            <figure><img src="images/bountiful-utah-temple.jpg" alt="Bountiful Utah Temple"><figcaption>Bountiful Utah Temple</figcaption></figure>
+            <figure><img src="images/calgary-alberta-temple.jpg" alt="Calgary Alberta Temple"><figcaption>Calgary Alberta Temple</figcaption></figure>
+            <figure><img src="images/Chicago-illinois-Temple.jpg" alt="Chicago Illinois Temple"><figcaption>Chicago Illinois Temple</figcaption></figure>
+            <figure><img src="images/curitiba-brazil-temple.jpg" alt="Curitiba Brazil Temple"><figcaption>Curitiba Brazil Temple</figcaption></figure>
+            <figure><img src="images/detroit-michigan-temple.jpg" alt="Detroit Michigan Temple"><figcaption>Detroit Michigan Temple</figcaption></figure>
+            <figure><img src="images/draper-utah-temple.jpg" alt="Draper Utah Temple"><figcaption>Draper Utah Temple</figcaption></figure>
+            <figure><img src="images/madrid-spain-temple.jpg" alt="Madrid Spain Temple"><figcaption>Madrid Spain Temple</figcaption></figure>
+            <figure><img src="images/medford-oregon-temple.jpg" alt="Medford Oregon Temple"><figcaption>Medford Oregon Temple</figcaption></figure>
+            <figure><img src="images/mount-timpanogos-utah-temple.jpg" alt="Mount Timpanogos Utah Temple"><figcaption>Mount Timpanogos Utah Temple</figcaption></figure>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy;<span  id="currentyear"></span> | Celestin M. Mande | South Africa</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
