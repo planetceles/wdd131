@@ -34,6 +34,9 @@ section img {
     height: auto;
     border: 1px solid black;
 }
+section img:hover {
+    box-shadow: 0 0 50px #929090;
+}
 figure {
     text-align: center;
     padding: 15px;
