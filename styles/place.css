@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #002868;
+    --secondary-color: #fff;
+    --accent-color: #bf0a30;
+    --background-color: #d1d5db;
+    --text-color: #1a1a1a;
+
+    --gideon-font: "Gideon Roman", serif;
+    --hand-writing: "Edu SA Hand", cursive;
+    --padding: 1rem;
+    --mobile-font: "DM Serif Text", serif;
+    --transform: translateY(-6px);
+}
+body {
+    font-family: var(--gideon-font);
+    
+}
+main {
+    background-color: var(--accent-color);
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+h2,
+h3 {
+    background-color: var(--accent-color);
+    padding: .4rem;
+    width: 50%;
+    border-radius: 10px;
+    color: var(--secondary-color);
+}
+header,
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: var(--padding);
+
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.element {
+    position: relative;
+}
+.data,
+.weather {
+    background-color: var(--secondary-color);
+    padding: var(--padding);
+    margin: 1rem;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: 2px 8px 24px 8px;
+    transition: transform 0.3s ease;
+}
+.data:hover {
+    transform: var(--transform)
+}
+.weather:hover {
+    transform: var(--transform)
+}
+.data {
+    top: 10%;
+    left: 5%;
+}
+main span {
+    font-family: var(--hand-writing);
+}
+.weather {
+    top: 45%;
+    right: 5%;
+
+}
+.weather h3::after {
+    content: " ⛅";
+}
+
+@media (max-width: 740px) {
+    .data,
+    .weather {
+        position: static;
+        margin: 0;
+        border: 2px solid var(--accent-color);
+        text-align: center;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+    }
+    body {
+        font-family: var(--mobile-font);
+    }
+    .weather h3::after {
+        content: "";
+    }
+    .weather-icon {
+        display: inline-block;
+        width: 70px;
+        height: auto;
+    }
+    h2,
+    h3 {
+        width: 100%;
+        background-color: var(--secondary-color);
+        color: rgb(109, 13, 13);
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 760px) {
+    .weather-icon {
+        display: none;
+    }
+}
