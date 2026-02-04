@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
+    background-color: #333;
+    color: #fff;
+}
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+main {
+    max-width: 950px;
+    margin: 0 auto;
+}
+.album {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+section img {
+    width: 320px;
+    height: auto;
+    border: 1px solid black;
+    animation: fade 15s;
+}
+section img:hover {
+    box-shadow: 0 0 50px #929090;
+}
+figure {
+    text-align: center;
+    padding: 15px;
+}
+figcaption {
+    text-align: center;
+    font-family: "Gideon Roman", serif;
+    font-weight: 400;
+}
+nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #36454f;
+    overflow: hidden;
+}
+nav ul.open {
+    display: flex;
+    animation: slideDown 0.3s ease-in-out forwards;
+}
+
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: larger;
+}
+
+nav ul li a:hover {
+    color: #000;
+    text-decoration: underline double;
+    font-size: 1.1rem;
+    background-color: #eee;
+}
+
+nav ul li a:active {
+    color: orangered;
+}
+
+.active {
+    color: yellow;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #9fd449;
+    position: absolute;
+    top: .3rem;
+    right: 1rem;
+    cursor: pointer;
+}
+#menu::before {
+    content: "☰";
+}
+#menu.open::before {
+    content: "❌";
+}
+.navigation {
+    display: none;
+    flex-direction: column;
+}
+.navigation.open {
+    display: flex;
+}
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
+    padding: 20px;
+
+}
+@keyframes fade {
+    0% {
+        opacity: 0;;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.temple-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: .2rem;
+    background-color: #eee;
+    text-align: center;
+    
+}
+.temple-card img {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+/* P {
+    color: blue;
+} */
+h2 {
+    margin-bottom: 1rem;
+}
+.label {
+    color: blue;
+    font-family: "Edu SA Hand", cursive;
+    font-size: smaller;
+}
