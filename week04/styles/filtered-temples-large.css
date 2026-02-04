@@ -1,0 +1,27 @@
+@media (min-width: 740px) {
+     header p {
+        color: aqua;
+     }
+    #menu {
+        display: none;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .album {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-columns: repeat(auto-fit, 200px); */
+        overflow: hidden;
+    }
+
+    section img {
+        width: 240px;
+        height: auto;
+    }
+    footer {
+        color: aqua;
+    }
+}

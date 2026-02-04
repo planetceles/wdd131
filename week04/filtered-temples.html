@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album - WDD 131 - Dynamic Web Fundamentals</title>
+    <meta name="author" content="Celestin M. Mande">
+    <meta name="description" content="Beautiful images of temples of the Church of Jesus-Christ of Latter-Day Saints.">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p>Temple Album</p>
+        <button id="menu" aria-label="Toggle navigation" aria-expanded="false"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Home" class="active" id="home">Home</a></li>
+                <li><a href="#" title="Old" id="old">Old</a></li>
+                <li><a href="#" title="New" id="new">New</a></li>
+                <li><a href="#" title="Large" id="large">Large</a></li>
+                <li><a href="#" title="Small" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section id="temple-cards" class="cards album"></section>
+        
+    </main>
+    <footer>
+        <p>&copy;<span  id="currentyear"></span> | Celestin M. Mande | South Africa</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
