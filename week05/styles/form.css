@@ -94,3 +94,18 @@ form select {
 .stars {
     cursor: pointer;
 }
+
+@media screen and (min-width: 400px) {
+    form {
+        width: 90%;
+    }
+    main {
+        /* max-width: 200px; */
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    rating-item {
+        width: 80%;
+    }
+}
