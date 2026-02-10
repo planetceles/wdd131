@@ -95,7 +95,7 @@ form select {
     cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     form {
         width: 100%;
     }
@@ -105,4 +105,4 @@ form select {
     .inst label {
         width: 100%;
     }
-}
+} */
