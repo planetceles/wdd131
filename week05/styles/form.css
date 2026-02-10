@@ -97,7 +97,7 @@ form select {
 
 @media screen and (min-width: 400px) {
     form {
-        width: 90%;
+        width: 100%;
     }
     main {
         margin: 0 auto;
