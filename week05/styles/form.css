@@ -102,7 +102,7 @@ form select {
     main {
         margin: 0 auto;
     }
-    .inst label {
+    .inst input[type="date"] {
         width: 100%;
     }
 }
