@@ -7,7 +7,7 @@
     <meta name="author" content="Celestin M. Mande">
     <meta name="description" content="Form design using css and javascript language">
     <link rel="stylesheet" href="styles/form.css">
-    <link rel="stylesheet" href="scripts/form.js">
+    <script src="scripts/form.js" defer></script>
 </head>
 <body>
     <header>
@@ -15,46 +15,38 @@
     </header>
     <main>
 
-        <form method="get" action="form.html">
-            <!-- <fieldset> -->
-                <label for="product-name">Product Name <select name="pname" id="pname">
-                    <option value="">Choose a Product...</option>
-                    <option value="productone">Product One</option>
-                    <option value="producttwo">Product Two</option>
-                    <option value="productthree">Product Three</option>
-                    <option value="productfour">Product Four</option>
-                    <option value="productfive">Product Five</option>
-                    <option value="productsix">Product Six</option>
-                    <option value="productseven">Product Seven</option>
+        <form method="get" action="review.html">
+                <label for="product-name">Product Name<span class="red">*</span> <select name="pname" id="pname" required>
+                    <option disabled selected value="">Select a Product...</option>
                 </select></label>
 
-                <label class="rating-title">Overall Rating</label>
+                <label class="rating-title">Overall Rating<span class="red">*</span></label>
                 <div class="rating-row">
                     <label class="rating-item">
                         <span class="stars">★</span>
-                        <input type="radio" name="rating" id="r1" value="1">
+                        <input type="radio" name="rating" id="r1" value="rating-stars" required>
                     </label>
                     <label class="rating-item">
                         <span class="stars">★★</span>
-                        <input type="radio" name="rating" id="r2" value="2">
+                        <input type="radio" name="rating" id="r2" value="rating-stars">
                     </label>
                     <label class="rating-item">
                         <span class="stars">★★★</span>
-                        <input type="radio" name="rating" id="r3" value="3">
+                        <input type="radio" name="rating" id="r3" value="rating-stars">
                     </label>
                     <label class="rating-item">
                         <span class="stars">★★★★</span>
-                        <input type="radio" name="rating" id="r4" value="4">
+                        <input type="radio" name="rating" id="r4" value="rating-stars">
                     </label>
                     <label class="rating-item">
                         <span class="stars">★★★★★</span>
-                        <input type="radio" name="rating" id="r5" value="5">
+                        <input type="radio" name="rating" id="r5" value="rating-stars">
                     </label>
                     
                 </div>
 
                 <div class="inst">
-                    <label for="">Date of Installation <input type="date" name="installationDate"></label>
+                    <label for="">Date of Installation<span class="red">*</span> <input type="date" name="installationDate" id="date-inst" required></label>
                 </div>
                 
 
@@ -66,20 +58,18 @@
                     <label><input type="checkbox" name="design" value="yes" id="design">Design</label>
                 </div>
 
-                <label>Written Review <span>(Optional)</span> <textarea name="review" id="review"></textarea></label>
+                <label>Written Review <span class="blue">(Optional)</span> <textarea name="review" id="review"></textarea></label>
 
                 <div class="inst">
-                    <label>Your Name <span>(Optional)</span><input type="text" name="fname"></label>
+                    <label>Your Name <span class="blue">(Optional)</span><input type="text" name="fname" id="fname"></label>
                 </div>
                 
                 
-            <!-- </fieldset> -->
-
-            <button type="submit">Post Review</button>
+            <input type="submit" value="Post Review">
         </form>
     </main>
     <footer>
-        <p>&copy;<span id="currentyear"> | Celeste M. Mande | South Africa</span></p>
+        <p>&copy;<span id="currentyear"></span> | Celeste M. Mande | South Africa</p>
         <p><span id="lastModified"></span></p>
     </footer>
 </body>

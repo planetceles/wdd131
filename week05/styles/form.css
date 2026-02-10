@@ -9,7 +9,7 @@ body {
 }
 header,
 footer {
-    background-color: #1a0225;
+    background-color: #4a2c1a;
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -25,7 +25,8 @@ textarea {
 }
 form {
     padding: .8rem;
-    background-color: #e7e4e7;
+    background-color: #ececec;
+    color: #222;
     border: 1px solid #ccc;
     border-radius: 7px;
     margin-top: 1rem;
@@ -79,7 +80,13 @@ form label {
 form textarea {
     height: 150px;
 }
-form button {
+form input[type="submit"] {
     padding: .5rem;
     width: 100%;
+}
+.red {
+    color: red;
+}
+.blue {
+    color: rgb(29, 29, 175);
 }
