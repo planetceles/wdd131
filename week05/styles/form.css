@@ -100,12 +100,9 @@ form select {
         width: 90%;
     }
     main {
-        /* max-width: 200px; */
         margin: 0 auto;
-        display: flex;
-        align-items: center;
     }
-    rating-item {
-        width: 80%;
+    .inst label {
+        width: 100%;
     }
 }
