@@ -89,4 +89,6 @@ form input[type="submit"] {
 }
 .blue {
     color: rgb(29, 29, 175);
+}form select {
+    font-style: italic;
 }
