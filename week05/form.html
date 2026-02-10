@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Design</title>
+    <meta name="author" content="Celestin M. Mande">
+    <meta name="description" content="Form design using css and javascript language">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="scripts/form.js">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+
+        <form method="get" action="form.html">
+            <!-- <fieldset> -->
+                <label for="product-name">Product Name <select name="pname" id="pname">
+                    <option value="">Choose a Product...</option>
+                    <option value="productone">Product One</option>
+                    <option value="producttwo">Product Two</option>
+                    <option value="productthree">Product Three</option>
+                    <option value="productfour">Product Four</option>
+                    <option value="productfive">Product Five</option>
+                    <option value="productsix">Product Six</option>
+                    <option value="productseven">Product Seven</option>
+                </select></label>
+
+                <label class="rating-title">Overall Rating</label>
+                <div class="rating-row">
+                    <label class="rating-item">
+                        <span class="stars">★</span>
+                        <input type="radio" name="rating" id="r1" value="1">
+                    </label>
+                    <label class="rating-item">
+                        <span class="stars">★★</span>
+                        <input type="radio" name="rating" id="r2" value="2">
+                    </label>
+                    <label class="rating-item">
+                        <span class="stars">★★★</span>
+                        <input type="radio" name="rating" id="r3" value="3">
+                    </label>
+                    <label class="rating-item">
+                        <span class="stars">★★★★</span>
+                        <input type="radio" name="rating" id="r4" value="4">
+                    </label>
+                    <label class="rating-item">
+                        <span class="stars">★★★★★</span>
+                        <input type="radio" name="rating" id="r5" value="5">
+                    </label>
+                    
+                </div>
+
+                <div class="inst">
+                    <label for="">Date of Installation <input type="date" name="installationDate"></label>
+                </div>
+                
+
+                <label>Which features did you find useful in the product? (Check all that apply)</label>
+                <div class="checks">
+                    <label><input type="checkbox" name="durability" value="yes" id="durability">Durability</label>
+                    <label><input type="checkbox" name="easeofuse" value="yes" id="easeofuse">Ease of Use</label>
+                    <label><input type="checkbox" name="performance" value="yes" id="performance">Performance</label>
+                    <label><input type="checkbox" name="design" value="yes" id="design">Design</label>
+                </div>
+
+                <label>Written Review <span>(Optional)</span> <textarea name="review" id="review"></textarea></label>
+
+                <div class="inst">
+                    <label>Your Name <span>(Optional)</span><input type="text" name="fname"></label>
+                </div>
+                
+                
+            <!-- </fieldset> -->
+
+            <button type="submit">Post Review</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"> | Celeste M. Mande | South Africa</span></p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
