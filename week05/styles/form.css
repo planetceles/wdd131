@@ -16,7 +16,7 @@ footer {
 }
 form select,
 .inst input,
-textarea {
+form textarea {
     display: block;
     padding: 12px;
     margin-top: .3rem;
@@ -24,21 +24,16 @@ textarea {
     margin-bottom: .9rem;
 }
 form {
-    padding: .8rem;
+    padding: 1rem .8rem;
     background-color: #ececec;
     color: #222;
     border: 1px solid #ccc;
     border-radius: 7px;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 form label {
     font-weight: bold;
-}
-.stars label {
-    cursor: pointer;
 }
 .one {
     display: flex;
@@ -55,7 +50,7 @@ form label {
     align-items: center;
     cursor: pointer;
     gap: .2rem;
-    width: 100%
+    width: 100%;
 }
 .rating-item input[type="radio"] {
     width: 30px;
@@ -79,6 +74,9 @@ form label {
 }
 form textarea {
     height: 150px;
+    cursor: pointer;
+    /* pointer-events: none; */
+    /* pointer-events: all; */
 }
 form input[type="submit"] {
     padding: .5rem;
@@ -89,6 +87,10 @@ form input[type="submit"] {
 }
 .blue {
     color: rgb(29, 29, 175);
-}form select {
+}
+form select {
     font-style: italic;
+}
+.stars {
+    cursor: pointer;
 }
