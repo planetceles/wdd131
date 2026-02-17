@@ -5,7 +5,7 @@ if (year) {
 }
 const lastModify = document.getElementById("lastModified");
 if (lastModify) {
-    lastModify.textContent = `Last Modifled: ${document.lastModified}`;
+    lastModify.textContent = `Last Modified: ${document.lastModified}`;
 }
 
 const products = [

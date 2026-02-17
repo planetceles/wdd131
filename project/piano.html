@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matlletus Academy of Art and Music</title>
+    <meta name="author" content="Celeste M. Mande">
+    <meta name="description" content="We offer professional Piano lessons for all ages. Learn sheet music, performance, accompaniment and upgrade your level. Bring your determination to see the desired outcome  with us">
+    <link rel="stylesheet" href="styles/piano.css">
+    <script src="scripts/piano.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Edu+SA+Hand:wght@400..700&family=Gideon+Roman&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- logo -->
+         <img src="images/aca-logo.webp" alt="Logo">
+        <h1>Matlletus Academy</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/piano-cover.webp">
+                <source media="(min-width: 750px)" srcset="images/piano-cover.webp">
+                <img src="images/piano-cover.webp" alt="Piano" width="500px" height="250px">
+            </picture>
+            <div class="hero-text">
+                <h2>Discover the Music Within You</h2>
+                <p>Professional Piano Lessons for All Ages</p>
+                <button id="exploreBtn">Explore Courses</button>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>Why Choose Us?</h2>
+            <p>We teach beginners to advanced students. No experience required!</p>
+        </section>
+
+        <section id="courses">
+            <h2>Our Courses</h2>
+            <div id="courseContainer" class="course-container">
+
+            </div>
+        </section>
+
+        
+        <section id="Register">
+            <h2>Register for Lessons</h2>
+            <form id="registrationForm">
+                <label for="fname">First name<span class="red">*</span>
+                    <input type="text" id="fname" placeholder="Celeste" required>
+                </label>
+
+                <label for="lname">Last Name<span class="red">*</span>
+                    <input type="text" id="lname" placeholder="Mande" required>
+                </label>
+
+                <label for="age">Age<span class="red">*</span>
+                    <input type="number" id="age" placeholder="21">
+                </label>
+
+                <label for="level">My Level<span class="red">*</span>
+                    <select name="level" id="level">
+                        <option disabled selected value="">Select My Level</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+                </label>
+
+                <label for="level">Piano Chords Reading<span class="red">*</span>
+                    <select name="chord" id="chord">
+                        <option disabled selected value="">Select My Level</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                        <option value="notknow">I don't know Piano Chords</option>
+                    </select>
+                </label>
+
+                <input type="submit" value="Register My Course">
+            </form>
+            <p id="formMessage"></p>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Students Say</h2>
+            <div id="testimonialContainer">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Matlletus Academy | Celeste M. Mande</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
