@@ -170,7 +170,7 @@ footer {
     /* justify-content: space-between; */
     /* align-items: center; */
 }
-@media (max-width: 500px) {
+@media (max-width: 740px) {
     .hero-text {
         display: block;
         /* overflow: hidden; */
