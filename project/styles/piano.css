@@ -192,17 +192,21 @@ footer {
     /* align-items: center; */
 }
 @media (max-width: 740px) {
-    
+    .hero {
+        overflow: hidden;
+    }
     .hero-text {
         display: block;
-        padding: 0;
     }
     .hero-text h2 {
         font-weight: bold;
     }
+    button {
+        /* padding: 0; */
+        margin-bottom: 0;
+    }
     .hero-text p {
         font-style: italic;
-        text-align: left;
     }
     header img {
         width: 30%;
