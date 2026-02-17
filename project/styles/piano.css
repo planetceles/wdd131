@@ -102,15 +102,36 @@ button:hover {
     font-size: .9rem;
 }
 .course-container {
-    display: var(--grid-display);
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: var(--flex-display);
+    flex-direction: column;
     gap: var(--1gap);
     padding: var(--1padding);
+    width: 50%;
 }
 .course-card {
     background-color: var(--white);
     padding: var(--1padding);
     border-radius: var(--8border_radius);
+}
+.course-quote {
+    display: var(--flex-display);
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.quote {
+    width: 40%;
+    /* font-style: italic; */
+}
+blockquote {
+    font-style: italic;
+    line-height: 1.8;
+}
+.quote footer {
+    background-color: var(--background-color);
+    color: black;
+    text-align: right;
+    padding: 0;
 }
 form {
     border: 1px solid black;
@@ -155,9 +176,9 @@ footer {
 p {
     padding: .3rem;
 }
-main img {
+header img {
     /* padding: 1rem; */
-    width: 80%;
+    width: 25%;
     height: auto;
 }
 footer {
@@ -194,6 +215,18 @@ footer {
         display: none;
     }
     form {
-        margin: 0;
+        margin: .2rem;
+    }
+    .course-quote {
+        display: var(--flex-display);
+        flex-direction: column;
+        align-items: normal;
+    }
+    .course-container {
+        width: 100%;
+    }
+    .quote {
+        width: 100%;
+        padding: .5rem;
     }
 }
