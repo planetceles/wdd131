@@ -67,6 +67,15 @@ body {
     width: 100%;
     height: auto;
     object-fit: cover;
+    animation: fade 15s;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 .hero-text {
     position: absolute;
@@ -160,4 +169,20 @@ footer {
     /* display: var(--flex-display); */
     /* justify-content: space-between; */
     /* align-items: center; */
+}
+@media (max-width: 700px) {
+    .hero-text {
+        display: block;
+        /* overflow: hidden; */
+        padding: 0;
+    }
+    .hero img {
+        
+    }
+    header {
+        padding: 0;
+    }
+    header h1 {
+        display: none;
+    }
 }
