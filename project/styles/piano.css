@@ -170,14 +170,14 @@ footer {
     /* justify-content: space-between; */
     /* align-items: center; */
 }
-@media (max-width: 700px) {
+@media (min-width: 200px) {
     .hero-text {
         display: block;
         /* overflow: hidden; */
         padding: 0;
     }
     .hero img {
-        
+
     }
     header {
         padding: 0;
