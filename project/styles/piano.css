@@ -175,9 +175,10 @@ footer {
         display: block;
         /* overflow: hidden; */
         padding: 0;
+        
     }
-    .hero img {
-
+    header img {
+        width: 30%;
     }
     header {
         padding: 0;
