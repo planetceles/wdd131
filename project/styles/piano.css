@@ -23,21 +23,21 @@
 
     --font-family: "DM Serif Display", serif;
     --second-font-family: "Lora", serif;
-    --1padding: 1rem;
-    --1gap: 1rem;
+    --one_padding: 1rem;
+    --one_gap: 1rem;
     --flex-display: flex;
     --cursor-pointer: pointer;
     --grid-display: grid;
 
-    --8border_radius: 8px;
-    --1margin: 1rem;
+    --eight_border_radius: 8px;
+    --one_margin: 1rem;
 }
 header {
     background-color: var(--header-color);
     color: var(--yellow-text);
     font-family: var(--font-family);
     /* text-align: center; */
-    padding: var(--1padding);
+    padding: var(--one_padding);
     display: var(--flex-display);
     justify-content: space-between;
     align-items: center;
@@ -52,7 +52,7 @@ body {
 }
 .nav-links {
     display: var(--flex-display);
-    gap: var(--1gap);
+    gap: var(--one_gap);
     list-style: none;
 }
 .nav-links a {
@@ -76,6 +76,16 @@ body {
 nav ul.open {
     display: var(--flex-display);
     animation: slideDown 0.3s ease-in-out forwards;
+}
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .hero {
     position: relative;
@@ -111,7 +121,7 @@ button {
     padding: .7rem 1.2rem;
     border: none;
     cursor: var(--cursor-pointer);
-    border-radius: var(--8border_radius);
+    border-radius: var(--eight_border_radius);
 }
 button:hover {
     background-color: var(--hover-color);
@@ -120,14 +130,14 @@ button:hover {
 .course-container {
     display: var(--flex-display);
     flex-direction: column;
-    gap: var(--1gap);
-    padding: var(--1padding);
+    gap: var(--one_gap);
+    padding: var(--one_padding);
     width: 50%;
 }
 .course-card {
     background-color: var(--white);
-    padding: var(--1padding);
-    border-radius: var(--8border_radius);
+    padding: var(--one_padding);
+    border-radius: var(--eight_border_radius);
 }
 .course-quote {
     display: var(--flex-display);
@@ -151,12 +161,12 @@ blockquote {
 }
 form {
     border: 1px solid black;
-    border-radius: var(--8border_radius);
+    border-radius: var(--eight_border_radius);
     padding: 1rem .8rem;
-    margin-top: var(--1margin);
-    margin-bottom: var(--1margin);
+    margin-top: var(--one_margin);
+    margin-bottom: var(--one_margin);
     max-width: 500px;
-    margin-left: var(--1margin);
+    margin-left: var(--one_margin);
 }
 form select,
 form input {
@@ -202,7 +212,7 @@ footer {
     color: var(--yellow-text);
     font-family: var(--font-family);
     text-align: center;
-    padding: var(--1padding);
+    padding: var(--one_padding);
     /* display: var(--flex-display); */
     /* justify-content: space-between; */
     /* align-items: center; */
@@ -247,7 +257,6 @@ footer {
     .course-quote {
         display: var(--flex-display);
         flex-direction: column;
-        align-items: normal;
     }
     .course-container {
         width: 100%;
@@ -264,13 +273,9 @@ footer {
         top: 60px;
         right: 0;
         width: 200px;
-        padding: var(--1padding);
+        padding: var(--one_padding);
         z-index: 1000;
         transition: all 0.3s ease;
-    }
-    .active {
-        /* color: var(--hover-color); */
-        color: red;
     }
     #menu {
         display: block;
