@@ -64,7 +64,7 @@
         </section>
 
                 
-        <section id="register">
+        <!-- <section id="register">
             <h2>Register for Lessons</h2>
             <form id="registrationForm">
                 <label for="fname">First name<span class="red">*</span>
@@ -101,11 +101,22 @@
                 <input type="submit" value="Register My Course">
             </form>
             <p id="formMessage"></p>
-        </section>
+        </section> -->
 
         <section class="testimonials">
             <h2>What Our Students Say</h2>
-            <div id="testimonialContainer">
+
+            <form action="" id="reviewForm" class="review-form">
+                <label for="reviewName">Your Name</label>
+                <input type="text" id="reviewName">
+
+                <label for="reviewText">Your Review</label>
+                <textarea name="reviewText" id="reviewText"></textarea>
+
+                <input type="submit" value="Submit My Review">
+            </form>
+
+            <div id="testimonialContainer" class="testimonial-container">
 
             </div>
         </section>

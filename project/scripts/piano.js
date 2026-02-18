@@ -41,37 +41,48 @@ if (courseContainer) {
 });
 }
 
-// function displayCourses(list) {
-//     courseContainer.innerHTML = "";
+const reviewForm = document.getElementById("reviewForm");
+const testimonialContainer = document.getElementById('testimonialContainer');
 
-//     list.forEach(course => {
-//         const card = document.createElement("div");
-//         card.classList.add("course-card");
+window.addEventListener("load", () => {
+    const savedReviews = JSON.parse(localStorage.getItem("reviews")) || [];
 
-//         card.innerHTML = `
-//             <h3>${course.title}</h3>
-//             <p>Duration: ${course.duration}</p>
-//             <p>Price: $${course.price}</p>
-//             `;
-//         courseContainer.appendChild(card);
-//     });
-// }
-const testimonials = [
-    "This academy changed m life!",
-    "I learned to read music in 2 months",
-    "Professional and patient teacher!"
-];
-
-const testimonialContainer = document.getElementById("testimonialContainer");
-
-if (testimonialContainer) {
-    testimonials.map(text => {
-        const paragraph = document.createElement("p");
-        paragraph.textContent = text;
-        testimonialContainer.appendChild(paragraph);
+    savedReviews.forEach(review => {
+        displayReview(review.name, review.text);
     });
-}
+});
+if (reviewForm) {
+    reviewForm.addEventListener("submit", function (event) {
+        event.preventDefault();
 
+        const name = document.getElementById("reviewName").value;
+        const text = document.getElementById("reviewText").value;
+
+        const review = { name, text };
+
+        const savedReviews = JSON.parse(localStorage.getItem("reviews")) || [];
+
+        savedReviews.push(review);
+
+        localStorage.setItem("reviews", JSON.stringify(savedReviews));
+
+        displayReview(name, text);
+        reviewForm.requestFullscreen();
+    });
+
+}
+function displayReview(name, text) {
+    if (!testimonialContainer) return;
+
+    const card = document.createElement("div");
+    card.classList.add("testimonial-card");
+
+    card.innerHTML = `
+    <h4>${name}</h4>
+    <p>${text}</p>
+    `;
+    testimonialContainer.appendChild(card);
+}
 const exploreBtn = document.getElementById("exploreBtn");
 
 if (exploreBtn) {
