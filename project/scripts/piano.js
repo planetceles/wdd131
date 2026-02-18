@@ -64,7 +64,7 @@ const testimonialContainer = document.getElementById("testimonialContainer");
 testimonials.map(text => {
     const paragraph = document.createElement("p");
     paragraph.textContent = text;
-    testimonialContainer.appendChild(p);
+    testimonialContainer.appendChild(paragraph);
 });
 
 const exploreBtn = document.getElementById("exploreBtn");
@@ -106,4 +106,14 @@ window.addEventListener("load", () => {
     if (savedName) {
         message.textContent = `Welcome back ${savedName}!`;
     }
+});
+
+const hamButton = document.querySelector("#menu");
+const navLinks = document.querySelector(".nav-links");
+
+hamButton.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("open");
+    hamButton.classList.toggle("open");
+
+    hamButton.setAttribute("aria-expanded", isOpen);
 });

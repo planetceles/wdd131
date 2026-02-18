@@ -56,8 +56,23 @@ body {
     list-style: none;
 }
 .nav-links a {
-    color: var(--white);
+    color: var(--yellow-text);
     text-decoration: none;
+}
+.nav-links a:hover {
+    color: var(--hover-color);
+    text-decoration: underline double;
+    font-size: 1.1rem;
+    /* background-color: var(--icon-color); */
+}
+
+#menu {
+    display: none;
+}
+
+nav ul.open {
+    display: var(--flex-display);
+    animation: slideDown 0.3s ease-in-out forwards;
 }
 .hero {
     position: relative;
@@ -83,8 +98,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--white);
-    /* background-color: #fdff6a; */
-    /* padding: 2rem; */
     display: var(--flex-display);
     flex-direction: column;
     gap: 9rem;
@@ -202,18 +215,25 @@ footer {
         font-weight: bold;
     }
     button {
-        /* padding: 0; */
         margin-bottom: 0;
     }
     .hero-text p {
         font-style: italic;
     }
     header img {
-        width: 30%;
+        width: 35%;
         height: auto;
     }
     header {
         padding: 0;
+        position: relative;
+        z-index: 1001;
+    }
+    header button {
+        background-color: var(--header-color);
+    }
+    header button:hover {
+        background-color: var(--header-color);
     }
     header h1 {
         display: none;
@@ -233,4 +253,43 @@ footer {
         width: 100%;
         padding: .5rem;
     }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: var(--header-color);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: var(--1padding);
+        z-index: 1000;
+        transition: all 0.3s ease;
+    }
+    .nav-links a:active {
+        color: var(--hover-color);
+    }
+    .active {
+        color: var(--hover-color);
+    }
+    #menu {
+        display: block;
+        font-size: 1.5rem;
+        border: 0;
+        /* background: none; */
+        color: var(--hover-color);
+        position: absolute;
+        /* top: 1rem; */
+        right: 1rem;
+        cursor: pointer;
+    }
+    #menu::before {
+        content: "☰";
+    }
+    #menu.open::before {
+        content: "❌";
+    }
+    .nav-links.open {
+        display: var(--flex-display);
+    }
+
 }

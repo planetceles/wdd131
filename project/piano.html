@@ -17,19 +17,20 @@
         <!-- logo -->
          <img src="images/aca-logo.webp" alt="Logo">
         <h1>Matlletus Academy</h1>
+        <button id="menu" aria-label="Toggle navigation" aria-expanded="false"></button>
         <nav>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="#" title="Home" class="active">Home</a></li>
+                <li><a href="#" title="Courses">Courses</a></li>
+                <li><a href="#" title="Register">Register</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="hero">
             <picture>
-                <source media="(min-width: 1000px)" srcset="images/piano-cover.webp" loading="lazy">
-                <source media="(min-width: 750px)" srcset="images/piano-cover.webp" loading="lazy">
+                <source media="(min-width: 1000px)" srcset="images/piano-cover.webp">
+                <source media="(min-width: 750px)" srcset="images/piano-cover.webp">
                 <img src="images/piano-cover.webp" alt="Piano" width="500px" height="250px" loading="lazy">
             </picture>
             <div class="hero-text">
@@ -64,7 +65,7 @@
         </section>
 
         
-        <section id="Register">
+        <section id="register">
             <h2>Register for Lessons</h2>
             <form id="registrationForm">
                 <label for="fname">First name<span class="red">*</span>
