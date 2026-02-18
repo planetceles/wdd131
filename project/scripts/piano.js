@@ -27,7 +27,8 @@ const courses = [
 const courseContainer = document.getElementById("courseContainer");
 // const courseContainer = document.querySelector("#course-container");
 
-courses.forEach(course => {
+if (courseContainer) {
+    courses.forEach(course => {
     const card = document.createElement("div");
     card.classList.add("course-card");
 
@@ -38,6 +39,8 @@ courses.forEach(course => {
     `;
     courseContainer.appendChild(card);
 });
+}
+
 // function displayCourses(list) {
 //     courseContainer.innerHTML = "";
 
@@ -61,24 +64,28 @@ const testimonials = [
 
 const testimonialContainer = document.getElementById("testimonialContainer");
 
-testimonials.map(text => {
-    const paragraph = document.createElement("p");
-    paragraph.textContent = text;
-    testimonialContainer.appendChild(paragraph);
-});
+if (testimonialContainer) {
+    testimonials.map(text => {
+        const paragraph = document.createElement("p");
+        paragraph.textContent = text;
+        testimonialContainer.appendChild(paragraph);
+    });
+}
 
 const exploreBtn = document.getElementById("exploreBtn");
 
-exploreBtn.addEventListener("click", () => {
-    document.getElementById("courses").scrollIntoView({
-        behavior: "smooth"
+if (exploreBtn) {
+    exploreBtn.addEventListener("click", () => {
+        document.getElementById("courses").scrollIntoView({
+            behavior: "smooth"
+        });
     });
-});
+}
 
 const form = document.getElementById("registrationForm");
-const message = document.getElementById("formMessage");
 
-form.addEventListener("submit", function (event) {
+if (form) {
+    form.addEventListener("submit", function (event) {
     event.preventDefault();
 
     const name = document.getElementById("fname").value;
@@ -88,17 +95,22 @@ form.addEventListener("submit", function (event) {
     let responseMessage;
 
     if (age < 6) {
-        responseMessage = "You are too young to enroll!";
+            responseMessage = "You are too young to enroll!";
     }
     else {
-        responseMessage = `Welcome ${name}! You registered for ${level} level.`;
+            responseMessage = `Welcome ${name}! You registered for ${level} level.`;
 
-        localStorage.setItem("studentName", name);
-        localStorage.setItem("studentLevel", level);
-    }
+            localStorage.setItem("studentName", name);
+            localStorage.setItem("studentLevel", level);
+        }
 
-    message.textContent = responseMessage;
-});
+        // message.textContent = responseMessage;
+        document.getElementById("formMessage").textContent = responseMessage;
+    });
+}
+const message = document.getElementById("formMessage");
+
+
 
 window.addEventListener("load", () => {
     const savedName = localStorage.getItem("studentName");
@@ -111,9 +123,11 @@ window.addEventListener("load", () => {
 const hamButton = document.querySelector("#menu");
 const navLinks = document.querySelector(".nav-links");
 
-hamButton.addEventListener("click", () => {
-    const isOpen = navLinks.classList.toggle("open");
-    hamButton.classList.toggle("open");
+if (hamButton && navLinks) {
+    hamButton.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        hamButton.classList.toggle("open");
 
-    hamButton.setAttribute("aria-expanded", isOpen);
-});
+        hamButton.setAttribute("aria-expanded", isOpen);
+    });
+}

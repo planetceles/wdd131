@@ -65,6 +65,9 @@ body {
     font-size: 1.1rem;
     /* background-color: var(--icon-color); */
 }
+.nav-links a.active {
+        color: var(--accent-color);
+}
 
 #menu {
     display: none;
@@ -236,7 +239,7 @@ footer {
         background-color: var(--header-color);
     }
     header h1 {
-        /* display: none; */
+        display: none;
     }
     form {
         margin: .2rem;
@@ -265,11 +268,9 @@ footer {
         z-index: 1000;
         transition: all 0.3s ease;
     }
-    .nav-links a:active {
-        color: var(--hover-color);
-    }
     .active {
-        color: var(--hover-color);
+        /* color: var(--hover-color); */
+        color: red;
     }
     #menu {
         display: block;
