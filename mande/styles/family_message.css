@@ -1,0 +1,22 @@
+:root {
+    --font-family: "Playfair Display", serif;
+    --second-font-family: "Birthstone", cursive;
+
+    --background-color: linear-gradient(1deg,#0F3057,#00587A,#1a1a2e);
+    --text-color: #ffffff;
+    --main-background: #0F2027;
+    --gradient-middle-ocean-blue: #2C5364;
+    --accent-soft-aqua: #7FDBFF;
+    --gold-color: #FFD700;
+    --light-lavender: #E6E6FA;
+    --coral-pink: #FF6B81;
+    --second-text-color: #E6E6FA;
+    --third-text-color: #FFD700;
+    --hover-color: #FF6B81;
+}
+.family-message p {
+    padding-bottom: 1rem;
+}
+h3 {
+    padding: 1rem;
+}
